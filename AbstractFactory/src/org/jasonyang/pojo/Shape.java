@@ -5,5 +5,5 @@ package org.jasonyang.pojo;
  */
 public interface Shape {
 
-    public void draw();
+    void draw();
 }

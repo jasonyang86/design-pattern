@@ -8,7 +8,7 @@ import org.jasonyang.pojo.Shape;
 /**
  * Created by jason on 17/9/8.
  */
-public class Main {
+public class AbstractFactoryDemo {
     public static void main (String[] args){
         // 获取图形工厂
         AbstractFactory shapeFactory = FactoryProducer.getFactory("shape");

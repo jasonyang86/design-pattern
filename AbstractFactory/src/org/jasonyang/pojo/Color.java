@@ -5,6 +5,6 @@ package org.jasonyang.pojo;
  * Created by jason on 17/9/8.
  */
 public interface Color {
-    public void fill();
+    void fill();
 }
 
