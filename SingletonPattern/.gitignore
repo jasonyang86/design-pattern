@@ -1,0 +1,7 @@
+/target/
+/out/
+/.idea/
+/SingletonPattern.iml
+/.classpath
+/.project
+/log/
