@@ -7,7 +7,7 @@ package org.nocoder.decorator;
  */
 public interface IMonkey {
     /**
-     * 自我介绍
+     * 猴子自我介绍
      */
     void introduce();
 }

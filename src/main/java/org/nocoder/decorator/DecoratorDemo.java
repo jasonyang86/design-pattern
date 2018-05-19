@@ -14,17 +14,23 @@ package org.nocoder.decorator;
 public class DecoratorDemo {
 
     public static void main(String[] args) {
-        System.out.println("装饰前：");
-        Monkey stoneMonkeyImpl = new Monkey();
-        stoneMonkeyImpl.introduce();
+        // 首先看看一个普通的猴子的自我介绍
+        System.out.print("使用装饰器前的猴子：");
+        Monkey monkey = new Monkey();
+        monkey.introduce();
 
         System.out.println();
 
-        System.out.println("装饰后：");
-        SunWuKongDecorator sunWuKongDecorator = new SunWuKongDecorator(new Monkey());
-        sunWuKongDecorator.introduce();
+        // 使用孙悟空装饰器装饰猴子
+        System.out.print("使用孙悟空装饰器装饰后的猴子：");
+        SunWuKongDecorator swkDecorator = new SunWuKongDecorator(new Monkey());
+        swkDecorator.introduce();
 
-        SixEarsMonkeyDecorator sixEarsMonkeyDecorator = new SixEarsMonkeyDecorator(new Monkey());
-        sixEarsMonkeyDecorator.introduce();
+        System.out.println();
+
+        // 使用六耳猕猴装饰器装饰猴子
+        System.out.print("使用六耳猕猴装饰器装饰后的猴子：");
+        SixEarsMonkeyDecorator semDecorator = new SixEarsMonkeyDecorator(new Monkey());
+        semDecorator.introduce();
     }
 }

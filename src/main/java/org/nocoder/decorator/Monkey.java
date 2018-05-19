@@ -8,6 +8,6 @@ package org.nocoder.decorator;
 public class Monkey implements IMonkey {
     @Override
     public void introduce() {
-        System.out.println(this.getClass().getName() + "：我是个猴子！");
+        System.out.print("我是一个会说话的猴子！");
     }
 }

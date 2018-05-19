@@ -12,18 +12,12 @@ public class SixEarsMonkeyDecorator extends AbstractMonkeyDecorator {
 
     @Override
     public void introduce(){
-        // 调用monkey自身的方法
         monkey.introduce();
-        // 调用装饰方法
         decorate(monkey);
     }
 
-    /**
-     * 具体的装饰方法
-     * @param monkey
-     */
     private void decorate(IMonkey monkey){
-        monkey.toString();
-        System.out.println(this.getClass().getName() + "：我是六耳猕猴，看我七十二变！");
+        System.out.print("我才是美猴王，我会七十二变！");
+        System.out.print("大唐高僧是我师傅！");
     }
 }

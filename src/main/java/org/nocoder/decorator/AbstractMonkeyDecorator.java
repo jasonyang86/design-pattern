@@ -10,7 +10,6 @@ package org.nocoder.decorator;
  */
 public abstract class AbstractMonkeyDecorator implements IMonkey {
     protected IMonkey monkey;
-
     public AbstractMonkeyDecorator(IMonkey monkey){
         this.monkey = monkey;
     }
