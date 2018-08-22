@@ -8,7 +8,9 @@ import java.util.List;
  */
 public class Subject {
 
-    // 观察者
+    /**
+     * 观察者
+     */
     private List<Observer> observers = new ArrayList<Observer>();
 
     private int state;
