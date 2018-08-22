@@ -16,6 +16,6 @@ public class Demo {
         // 触发事件通知已经订阅的观察者
         subject.setState(100);
 
-        // 观察者消费订阅
+        // 观察者消费订阅，执行 update() 方法
     }
 }
