@@ -13,4 +13,9 @@ public class BakeMuttonCommand extends Command{
     public void execute() {
         receiver.bakeMutton();
     }
+
+    @Override
+    public String toString() {
+        return "烤肉串";
+    }
 }

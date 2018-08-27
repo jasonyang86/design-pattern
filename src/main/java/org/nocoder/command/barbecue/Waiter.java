@@ -21,6 +21,7 @@ public class Waiter {
      * 通知烧烤师傅
      */
     public void notifyBarbecuer(){
+        System.out.println("服务员通知烧烤师傅");
         for (Command command : commandList) {
             command.execute();
         }

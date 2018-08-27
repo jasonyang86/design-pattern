@@ -13,4 +13,9 @@ public class BakeChickenCommand extends Command{
     public void execute() {
         receiver.bakeChicken();
     }
+
+    @Override
+    public String toString() {
+        return "烤鸡翅";
+    }
 }
