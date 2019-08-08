@@ -1,5 +1,8 @@
 package org.nocoder.proxy;
 
+/**
+ * 代理对象
+ */
 public class Proxy implements Subject {
 
     private Subject subject;
@@ -15,3 +18,4 @@ public class Proxy implements Subject {
         System.out.println("proxy do something after subject request.");
     }
 }
+

@@ -6,3 +6,4 @@ public class RealSubject implements Subject {
         System.out.println("real subject request");
     }
 }
+

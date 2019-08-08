@@ -1,4 +1,4 @@
-package org.nocoder.command.barbecue;
+package org.nocoder.commanddemo;
 
 import java.util.ArrayList;
 import java.util.List;

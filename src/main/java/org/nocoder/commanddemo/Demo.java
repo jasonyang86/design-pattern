@@ -1,4 +1,4 @@
-package org.nocoder.command.barbecue;
+package org.nocoder.commanddemo;
 
 public class Demo {
 
