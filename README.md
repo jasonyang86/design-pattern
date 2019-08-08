@@ -4,7 +4,7 @@
 
 - Adapter
     - 适配器
-- Chain of Responsibili
+- Chain of Responsibility
     - 责任链
 - Command
     - 命令
