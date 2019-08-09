@@ -1,4 +1,4 @@
-package org.nocoder.commanddemo;
+package org.nocoder.command.demo;
 
 import java.util.ArrayList;
 import java.util.List;

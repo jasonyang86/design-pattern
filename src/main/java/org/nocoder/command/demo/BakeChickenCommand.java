@@ -1,4 +1,4 @@
-package org.nocoder.commanddemo;
+package org.nocoder.command.demo;
 
 /**
  * 烤鸡命令

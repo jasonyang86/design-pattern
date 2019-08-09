@@ -1,4 +1,4 @@
-package org.nocoder.commanddemo;
+package org.nocoder.command.demo;
 
 public class Demo {
 
