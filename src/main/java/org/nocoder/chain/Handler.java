@@ -17,7 +17,8 @@ public abstract class Handler {
     /**
      * 处理请求的抽象方法
      * @param request
+     * @return
      */
-    public abstract void handleRequest(int request);
+    public abstract String handleRequest(int request);
 }
 

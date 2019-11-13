@@ -1,13 +1,21 @@
 package org.nocoder.chain;
 
+/**
+ * 接收10～20的整数并处理
+ */
 public class ConcreteHandlerB extends Handler {
     @Override
-    public void handleRequest(int request) {
+    public String handleRequest(int request) {
+        // 执行具体处理类B的逻辑
         if(request >= 10 && request < 20){
-            System.out.println(this.getClass().getSimpleName() + " 处理请求 " + request);
-        }else if(successor != null){
-            successor.handleRequest(request);
+            return this.getClass().getSimpleName();
         }
+
+        // 如果有后继者，则继续调用后继者的处理方法
+        if(successor != null){
+            return successor.handleRequest(request);
+        }
+        return null;
     }
 }
 
