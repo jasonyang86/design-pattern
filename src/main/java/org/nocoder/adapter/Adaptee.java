@@ -1,8 +1,11 @@
 package org.nocoder.adapter;
 
+/**
+ * 适配后的接口
+ */
 public class Adaptee {
-    public void specificRequest(){
-        System.out.println("specific request.");
+    public String specificRequest(){
+        return "specific request";
     }
 }
 

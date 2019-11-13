@@ -1,11 +1,14 @@
 package org.nocoder.adapter;
 
+/**
+ * 适配器,包含转换后的接口
+ */
 public class Adapter extends Target{
     private Adaptee adaptee = new Adaptee();
 
     @Override
-    public void request() {
-        adaptee.specificRequest();
+    public String request() {
+        return adaptee.specificRequest();
     }
 }
 

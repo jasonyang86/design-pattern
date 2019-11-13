@@ -1,11 +1,11 @@
 package org.nocoder.adapter;
 
 /**
- * 期望的接口
+ * 要调用的接口，需要适配
  */
 public class Target {
-    public void request(){
-        System.out.println("normal request.");
+    public String request(){
+        return "normal request";
     }
 }
 
