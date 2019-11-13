@@ -23,8 +23,8 @@ public class Singleton {
         return singleton;
     }
 
-    public void showMessage(){
-        System.out.println("hello, I'm a single object!");
+    public String showMessage(){
+        return "singleton";
     }
 
 }

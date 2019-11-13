@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 /**
  * ChainTest
@@ -30,5 +31,16 @@ public class ChainTest {
     @Test
     public void whenGreaterThan10ThenHandlerB(){
         assertEquals("ConcreteHandlerB", handler1.handleRequest(11));
+    }
+
+
+    @Test
+    public void handlerAHasSuccessor(){
+        assertEquals("ConcreteHandlerB", handler1.successor.getClass().getSimpleName());
+    }
+
+    @Test
+    public void handlerBHasNoSuccessor(){
+        assertNull(handler2.successor);
     }
 }
