@@ -2,3 +2,7 @@ target/
 .idea/
 out/
 *.DS_Store
+gradle/
+*.iml
+.gradle/
+build/
