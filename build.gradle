@@ -1,5 +1,8 @@
-apply plugin: 'java'
-apply plugin: 'maven'
+plugins {
+    id "application"
+}
+
+apply plugin : "java"
 
 group = 'org.nocoder'
 version = '1.0'
@@ -9,10 +12,18 @@ description = """"""
 sourceCompatibility = 8
 targetCompatibility = 8
 
+ext{
+    javaMainClass = "org.nocoder.proxy.Client"
+}
+
+application {
+    mainClassName = javaMainClass
+}
 
 repositories {
-    maven { url "https://repo.maven.apache.org/maven2" }
+    mavenCentral()
 }
+
 dependencies {
     compile group: 'org.projectlombok', name: 'lombok', version: '1.16.18'
     testCompile 'junit:junit:4.12'
