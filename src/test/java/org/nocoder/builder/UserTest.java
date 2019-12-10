@@ -30,6 +30,8 @@ public class UserTest {
      */
     @Test
     public void testThreadSafe(){
-
+        User user = new User.Builder("Jason", 30).phone("15802882099").buildNotThreadSafe();
+        assertEquals("Jason", user.getName());
+        assertEquals("15802882099", user.getPhone());
     }
 }
