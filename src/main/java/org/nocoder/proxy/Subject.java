@@ -7,6 +7,6 @@ public interface Subject {
     /**
      * request method...
      */
-    void request();
+    String request();
 }
 

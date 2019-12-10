@@ -12,10 +12,11 @@ public class Proxy implements Subject {
     }
 
     @Override
-    public void request(){
+    public String request(){
         System.out.println("proxy do something before subject request.");
-        subject.request();
+        String subjectStr = subject.request();
         System.out.println("proxy do something after subject request.");
+        return "Proxy: " + subjectStr;
     }
 }
 
